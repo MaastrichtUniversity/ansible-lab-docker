@@ -13,7 +13,7 @@ services:
     command: ["/usr/sbin/sshd","-D"]
     volumes:
       - ansible_vol:/var/ans
-  host01:
+  host:
     links:
       - base
       - master
